@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="container-fluid col-lg-3">
+      <input type="button" class="btn-primary" (click)=addDay() value="Add Days">
+      <div *ngFor="let i of days">
+        <button class="btn btn-lg btn-outline-primary">{{i.name}}</button>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid col-lg-4">
+      <input type="button" class="btn-primary" (click)=addTopics() value="Add Topics">
+      <div *ngFor="let j of topics">
+        <button class="btn btn-lg btn-outline-primary" (click)=openTopic()>{{j.name}}</button>
+      </div>
+    </div>
+
+    <div class="container-fluid col-lg-5">
+      <input type="button" class="btn-primary" (click)=addDescription() value="Add Description">
+      <div *ngFor="let k of Description">
+        <button class="btn btn-lg btn-outline-primary" (click)=openDescription()>{{k.name}}</button>
+      </div>
+    </div>
+
+  </div>
+</div>
